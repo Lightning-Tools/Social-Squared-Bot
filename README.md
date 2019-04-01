@@ -27,5 +27,5 @@ Go to [Social Squared Chatbot Video](https://vimeo.com/327730469) page
 
 Go to [How to run Social Squared Chatbot](https://lightning-tools.github.io/Social-Squared-Bot/) page 
 
-Go to [Social Squared Chatbot description ](https://lightning-tools.github.io/Social-Squared-Bot/description/) page 
+Go to [Social Squared Chatbot Description ](https://lightning-tools.github.io/Social-Squared-Bot/description/) page 
 
