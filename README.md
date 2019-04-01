@@ -8,7 +8,7 @@ To get started.
        Clone the repository
        
        https://github.com/Lightning-Tools/Social-Squared-Bot.git
-       cd Social-Squared-Chatbot
+       cd Social-Squared-Bot
 
        # install dependencies
        npm install OR yarn install
@@ -20,12 +20,12 @@ To get started.
 Use [ngrok](https://ngrok.com/) to run fulfillment locally serving local http to public https or
 publish it on Heroku (more on How to run Social Squared Chatbot page).
 
-Note, you should create dev.js file for local development in config folder https://github.com/Lightning-Tools/Social-Squared-Chatbot/tree/master/config based on the given dev-sample.js file https://github.com/Lightning-Tools/Social-Squared-Chatbot/blob/master/config/dev-sample.js file.
+Note, you should create dev.js file for local development in config folder https://github.com/Lightning-Tools/Social-Squared-Bot/tree/master/config based on the given dev-sample.js file https://github.com/Lightning-Tools/Social-Squared-Bot/blob/master/config/dev-sample.js file.
 
 
 Go to [Social Squared Chatbot Video](https://vimeo.com/327730469) page
 
-Go to [How to run Social Squared Chatbot](https://lightning-tools.github.io/Social-Squared-Chatbot/) page 
+Go to [How to run Social Squared Chatbot](https://lightning-tools.github.io/Social-Squared-Bot/) page 
 
-Go to [Social Squared Chatbot description ](https://lightning-tools.github.io/Social-Squared-Chatbot/description/) page 
+Go to [Social Squared Chatbot description ](https://lightning-tools.github.io/Social-Squared-Bot/description/) page 
 
