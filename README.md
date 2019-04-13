@@ -18,7 +18,7 @@ To get started.
 ```   
 Use [ngrok](https://ngrok.com/) to run fulfillment locally serving local http to public https or publish it on Heroku (more on How to run Social Squared Chatbot page).
 
-The app stores data (support questions, feature requests etc.) to [mlab](https://mlab.com/) which is a fully managed cloud database service that hosts MongoDB databases.
+The app saves data (support questions, feature requests etc.) to [mlab](https://mlab.com/) which is a fully managed cloud database service that hosts MongoDB databases.
 
 [SendGrid](https://sendgrid.com/) is a cloud-based SMTP provider that allows you to send emails without having to maintain email servers. It is our app's SMTP provider to send emails to support (support questions, feature requests etc.).
 
