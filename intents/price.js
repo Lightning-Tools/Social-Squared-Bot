@@ -4,12 +4,6 @@ const { Email } = require('../sendGrid/send')
 const { Price } = require('../database/models/price')
 const Save = require('../database/save')
 
-const license = [
-  'Licensing - Per WFE for On-Premises, and per User for Online. We can subscription or perpetual options.'
-]
-
-const price = ['Would you like to go to product pricing page?']
-
 const pricingSuggestions = agent => {
   agent.add(new Suggestion('Yes'))
   agent.add(new Suggestion('No'))
@@ -38,8 +32,7 @@ module.exports = agent => {
 
   switch (agent.action) {
     case 'ss.price':
-      agent.add(license)
-      agent.add(price)
+      agent.add(consoleMessages)
       pricingSuggestions(agent)
       break
     case 'ss.price.yes':
