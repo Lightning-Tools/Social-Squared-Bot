@@ -16,7 +16,7 @@ To get started.
        npm run dev OR yarn run dev
        
 ```   
-Use [ngrok](https://ngrok.com/) to run fulfillment locally serving local http to public https or publish it on Heroku (more on How to run Social Squared Chatbot page).
+[ngrok](https://ngrok.com/) is used to run the app locally serving local http to public https. The app is hosted on Heroku. (more on How to run Social Squared Chatbot page).
 
 The app saves data (support questions, feature requests etc.) to [mlab](https://mlab.com/) which is a fully managed cloud database service that hosts MongoDB databases.
 
