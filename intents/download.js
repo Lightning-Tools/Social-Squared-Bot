@@ -1,4 +1,4 @@
-const { hasParams, Card } = require('../helpers/utils')
+const { Card } = require('../helpers/utils')
 const { Email } = require('../sendGrid/send')
 const { Download } = require('../database/models/download')
 const Save = require('../database/save')
@@ -32,20 +32,15 @@ const downloadCards = agent => {
 
 module.exports = agent => {
   const { consoleMessages, parameters, requestSource } = agent
+  downloadCards(agent)
 
-  if (hasParams(agent)) {
-    downloadCards(agent)
-
-    if (requestSource === 'FACEBOOK') {
-      agent.add(consoleMessages)
-    } else {
-      const [msg1, msg2, msg3] = consoleMessages
-      agent.add([msg2, msg3])
-    }
-
-    Email('User Download', parameters)
-    Save(Download, parameters)
-  } else {
+  if (requestSource === 'FACEBOOK') {
     agent.add(consoleMessages)
+  } else {
+    const [msg1, msg2, msg3] = consoleMessages
+    agent.add([msg2, msg3])
   }
+
+  Email('User Download', parameters)
+  Save(Download, parameters)
 }

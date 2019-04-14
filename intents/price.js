@@ -1,5 +1,5 @@
 const { Suggestion } = require('dialogflow-fulfillment')
-const { hasParams, Card } = require('../helpers/utils')
+const { Card } = require('../helpers/utils')
 const { Email } = require('../sendGrid/send')
 const { Price } = require('../database/models/price')
 const Save = require('../database/save')
@@ -36,15 +36,10 @@ module.exports = agent => {
       pricingSuggestions(agent)
       break
     case 'ss.price.yes':
-      if (hasParams(agent)) {
-        priceCard(agent, parameters)
-        agent.add(consoleMessages)
-
-        Email('Product Price', parameters)
-        Save(Price, parameters)
-      } else {
-        agent.add(consoleMessages)
-      }
+      priceCard(agent, parameters)
+      agent.add(consoleMessages)
+      Email('Product Price', parameters)
+      Save(Price, parameters)
       break
     case 'ss.price.no':
       agent.add(consoleMessages)

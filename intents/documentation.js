@@ -1,4 +1,4 @@
-const { hasParams, Card } = require('../helpers/utils')
+const { Card } = require('../helpers/utils')
 
 const documentationLink = product => {
   switch (product) {
@@ -27,10 +27,6 @@ const documentationCard = (agent, { Product }) => {
 module.exports = agent => {
   const { consoleMessages } = agent
 
-  if (hasParams(agent)) {
-    documentationCard(agent, agent.parameters)
-    agent.add(consoleMessages)
-  } else {
-    agent.add(consoleMessages)
-  }
+  documentationCard(agent, agent.parameters)
+  agent.add(consoleMessages)
 }
