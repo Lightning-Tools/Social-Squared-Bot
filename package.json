@@ -1,7 +1,7 @@
 {
-  "name": "textcontext",
+  "name": "socialsquaredchatbot",
   "version": "1.0.0",
-  "description": "",
+  "description": "Social Squared Chatbot",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
