@@ -28,9 +28,9 @@ const priceCard = (agent, { Product }) => {
 }
 
 module.exports = agent => {
-  const { consoleMessages, parameters } = agent
+  const { consoleMessages, parameters, action } = agent
 
-  switch (agent.action) {
+  switch (action) {
     case 'ss.price':
       agent.add(consoleMessages)
       pricingSuggestions(agent)
@@ -47,9 +47,6 @@ module.exports = agent => {
       }
       break
     case 'ss.price.no':
-      agent.add(consoleMessages)
-      break
-    default:
       agent.add(consoleMessages)
       break
   }

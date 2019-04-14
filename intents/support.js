@@ -11,7 +11,7 @@ const suggestions = agent => {
 }
 
 module.exports = agent => {
-  const { consoleMessages, parameters, action } = agent
+  const { parameters, action } = agent
 
   switch (action) {
     case 'ss.support':
@@ -22,9 +22,6 @@ module.exports = agent => {
 
       Email('User Question', parameters)
       Save(Common('Support'), parameters)
-      break
-    default:
-      agent.add(consoleMessages)
       break
   }
 }
